@@ -1,2 +1,2 @@
 # TS-LSTM
-Temporal Sliding LSTM model
+Ensemble Deep Learning for Skeleton-based Action Recognition using Temporal Sliding LSTM networks
