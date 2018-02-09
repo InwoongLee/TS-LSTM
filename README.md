@@ -5,7 +5,7 @@ This is a Tensorflow implementation of Ensemble TS-LSTM v1 and v2 models from th
 ![Model architecture](model.png)
 
 ## Requirements
-- Matlab
+- Matlab R2017a
 - Python 2.7.12
 - Numpy
 - [Tensorflow][4]
