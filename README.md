@@ -37,14 +37,14 @@ To use noraml skeleton data for correct action recognition, we refined the datas
 We chose only normal skeleton sequences and finally provide the actor information with frame numbers according to above process.
 '[samples_with_missing_skeletons.txt][6]' are also removed by the process.
 Also, we upload the code in Matlab, which extracts csv files from txt files provided by [ROSE Lab.][7].
-The code covers two cases, Actions 1-49 and 50-60.
+The codes ([make_csv_action_0149.m][8], [make_csv_action_5060.m][9]) cover two cases, Actions 1-49 and 50-60.
 
-- Action 1-49 (One actor)
+- Action 1-49 (One actor, [Actions_01-49.txt][10])
   - One skeleton (Primary actor) appears.
   - Two skeletons (Primary actor and trash skeleton) appear without skeleton index switching.
   - Two skeletons appear with skeleton index switching.
   
-- Action 50-60 (Two actors)
+- Action 50-60 (Two actors, [Actions_50-60.txt][11])
   - Two skeletons (Primary and secondary actor) appear without skeleton index switching.
   - Two skeletons appear with skeleton index switching.
   - Three skeletons (Primary and secondary actor and trash skeleton) appear without skeleton index switching.
@@ -58,3 +58,7 @@ The code covers two cases, Actions 1-49 and 50-60.
 [5]: https://github.com/InwoongLee/NTURGB-D
 [6]: https://github.com/InwoongLee/NTURGB-D/blob/master/Matlab/samples_with_missing_skeletons.txt
 [7]: http://rose1.ntu.edu.sg/Datasets/actionRecognition.asp
+[8]: https://github.com/InwoongLee/TS-LSTM/blob/master/make_csv_action_0149.m
+[9]: https://github.com/InwoongLee/TS-LSTM/blob/master/make_csv_action_5060.m
+[10]: https://github.com/InwoongLee/TS-LSTM/blob/master/Actions_01-49.txt
+[11]: https://github.com/InwoongLee/TS-LSTM/blob/master/Actions_50-60.txt
