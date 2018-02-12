@@ -34,10 +34,10 @@ To use noraml skeleton data for correct action recognition, we refined the datas
   It is impossible to determine the primary actor of all action sequences, and therefore we only check the first action sequence of each setup.
   Under the assumption that the position of the actors remains unchanged in each setup, we determined the primary actor in other action sequences by using the information of the first action sequence.
 
-We chose only normal skeleton sequences and finally provide the actor information with frame numbers according to above process.
-'[samples_with_missing_skeletons.txt][6]' are also removed by the process.
-Also, we upload the code in Matlab, which extracts csv files from txt files provided by [ROSE Lab.][7].
-The code covers two cases, Actions 1-49 and 50-60.
+We chose only normal skeleton sequences and finally provide the actor information ([Actions_01-49.txt][10], [Actions_50-60.txt][11]) with frame numbers according to above process.
+The skeleton sequences in '[samples_with_missing_skeletons.txt][6]' are also removed by the process.
+Also, we upload the code in Matlab, which extracts csv files from txt files provided by [ROSE Lab][7].
+The codes ([make_csv_action_0149.m][8], [make_csv_action_5060.m][9]) cover two cases, Actions 1-49 and 50-60.
 
 - Action 1-49 (One actor)
   - One skeleton (Primary actor) appears.
@@ -50,7 +50,6 @@ The code covers two cases, Actions 1-49 and 50-60.
   - Three skeletons (Primary and secondary actor and trash skeleton) appear without skeleton index switching.
   - Three skeletons appear with skeleton index switching.
 
-
 [1]: http://openaccess.thecvf.com/content_ICCV_2017/papers/Lee_Ensemble_Deep_Learning_ICCV_2017_paper.pdf
 [2]: http://m.tv.naver.com/v/2643231
 [3]: https://youtu.be/KSy7flzu4Es
@@ -58,3 +57,7 @@ The code covers two cases, Actions 1-49 and 50-60.
 [5]: https://github.com/InwoongLee/NTURGB-D
 [6]: https://github.com/InwoongLee/NTURGB-D/blob/master/Matlab/samples_with_missing_skeletons.txt
 [7]: http://rose1.ntu.edu.sg/Datasets/actionRecognition.asp
+[8]: https://github.com/InwoongLee/TS-LSTM/blob/master/make_csv_action_0149.m
+[9]: https://github.com/InwoongLee/TS-LSTM/blob/master/make_csv_action_5060.m
+[10]: https://github.com/InwoongLee/TS-LSTM/blob/master/Actions_01-49.txt
+[11]: https://github.com/InwoongLee/TS-LSTM/blob/master/Actions_50-60.txt
