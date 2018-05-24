@@ -63,7 +63,7 @@ The codes ([make_csv_action_0149.m][8], [make_csv_action_5060.m][9]) cover two c
 [5]: https://github.com/InwoongLee/NTURGB-D
 [6]: https://github.com/InwoongLee/NTURGB-D/blob/master/Matlab/samples_with_missing_skeletons.txt
 [7]: http://rose1.ntu.edu.sg/Datasets/actionRecognition.asp
-[8]: https://github.com/InwoongLee/TS-LSTM/blob/master/make_csv_action_0149.m
-[9]: https://github.com/InwoongLee/TS-LSTM/blob/master/make_csv_action_5060.m
-[10]: https://github.com/InwoongLee/TS-LSTM/blob/master/Actions_01-49.txt
-[11]: https://github.com/InwoongLee/TS-LSTM/blob/master/Actions_50-60.txt
+[8]: https://github.com/InwoongLee/TS-LSTM/blob/master/NTU_Data_Info/make_csv_action_0149.m
+[9]: https://github.com/InwoongLee/TS-LSTM/blob/master/NTU_Data_Info/make_csv_action_5060.m
+[10]: https://github.com/InwoongLee/TS-LSTM/blob/master/NTU_Data_Info/Actions_01-49.txt
+[11]: https://github.com/InwoongLee/TS-LSTM/blob/master/NTU_Data_Info/Actions_50-60.txt
