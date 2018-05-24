@@ -4,6 +4,10 @@ This is a Tensorflow implementation of Ensemble TS-LSTM v1, v2 and v3 models fro
 
 ![Model architecture](ensemble_model.png)
 
+This is also a Tensorflow implementation of Generalized TS-LSTM models from the paper 3D Human Behavior Understanding using Generalized TS-LSTM Networks.
+
+![Model architecture](generalized_model.png)
+
 ## Requirements
 - Python 2.7.12 (NTU)
 - [Tensorflow][4] 0.11.0rc2 (NTU)
