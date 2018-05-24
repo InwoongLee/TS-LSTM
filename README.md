@@ -5,8 +5,10 @@ This is a Tensorflow implementation of Ensemble TS-LSTM v1 and v2 models from th
 ![Model architecture](model.png)
 
 ## Requirements
-- Python 3.5.2 & [Tensorflow][4] 1.4.1 (UCLA & UWA)
-- Python 2.7.12 & [Tensorflow][4] 0.11.0rc2 (NTU)
+- Python 2.7.12 (NTU)
+- [Tensorflow][4] 0.11.0rc2 (NTU)
+- Python 3.5.2 (UCLA & UWA)
+- [Tensorflow][4] 1.4.1 (UCLA & UWA)
 - Numpy
 
 ## Dataset
