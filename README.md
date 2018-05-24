@@ -5,9 +5,9 @@ This is a Tensorflow implementation of Ensemble TS-LSTM v1 and v2 models from th
 ![Model architecture](model.png)
 
 ## Requirements
-- Python 2.7.12
+- Python 2.7.12 and [Tensorflow][4] 0.11.0rc2 (NTU dataset)
 - Numpy
-- [Tensorflow][4]
+- Python 3.5.2 and [Tensorflow][4] 1.4.1 (UCLA and UWA dataset)
 
 ## Dataset
 ### [NTU RGB+D Action Recognition Dataset][5]
