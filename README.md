@@ -8,12 +8,13 @@ This is also a Tensorflow implementation of Generalized Temporal Sliding LSTM (T
 
 ![Model architecture](Image/generalized_model.png)
 
-## Requirements
+## Requirements (Ubuntu except for Matlab)
 - Python 2.7.12 (NTU)
 - [Tensorflow][4] 0.11.0rc2 (NTU)
 - Python 3.5.2 (UCLA & UWA)
 - [Tensorflow][4] 1.4.1 (UCLA & UWA)
 - Numpy
+- Matlab 2017a (Windows)
 
 ## Dataset
 ### [NTU RGB+D Action Recognition Dataset][5]
