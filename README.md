@@ -1,6 +1,6 @@
 # Ensemble Deep Learning for Skeleton-based Action Recognition using Temporal Sliding LSTM networks
 
-This is a Tensorflow implementation of Ensemble TS-LSTM v1, v2 and v3 models from the paper [Ensemble Deep Learning for Skeleton-based Action Recognition using Temporal Sliding LSTM networks][1] and the paper [3D Human Behavior Understanding using Generalized TS-LSTM Networks]. You can see the video for the paper in [Naver D2][2] or [YouTube][3] (Korean Language).
+This is a Tensorflow implementation of Ensemble TS-LSTM v1, v2 and v3 models from the paper [Ensemble Deep Learning for Skeleton-based Action Recognition using Temporal Sliding LSTM networks][1] and the paper 3D Human Behavior Understanding using Generalized TS-LSTM Networks. You can see the video for the paper in [Naver D2][2] or [YouTube][3] (Korean Language).
 
 ![Model architecture](ensemble_model.png)
 
