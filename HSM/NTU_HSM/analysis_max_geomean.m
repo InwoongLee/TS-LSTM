@@ -332,7 +332,7 @@ id_WS_300 = find(test_accuracy_WS_300(:,11) == max(test_accuracy_WS_300(:,11)));
 
 id_WS_300_conf = int2str(id_WS_300(1)*100);
 
-path_WS_300 = ['./WS_300_TS_100/view-test-' id_WS_270_conf '.csv'];
+path_WS_300 = ['./WS_300_TS_100/view-test-' id_WS_300_conf '.csv'];
 
 confusion_WS_300 = csvread(path_WS_300);
 for i=1:size(confusion_WS_300,1)    
