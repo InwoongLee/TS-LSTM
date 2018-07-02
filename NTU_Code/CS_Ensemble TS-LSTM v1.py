@@ -2306,58 +2306,58 @@ def main(_):
     eval_config.hidden_size = 100
     eval_config.keep_prob = myKeepProb
 
-    # ###################################################################################################################
-    # DATA_PATH = 'sklt_data_all'
-    # CAMERA_OR_SUBJECT = 2
-    #
-    # train_set = [1, 2, 4, 5, 8, 9, 13, 14, 15, 16, 17, 18, 19, 25, 27, 28, 31, 34, 35, 38]
-    # test_set = [3, 6, 7, 10, 11, 12, 20, 21, 22, 23, 24, 26, 29, 30, 32, 33, 36, 37, 39, 40]
-    #
-    # train_sklt0, train_label0 = Action_input.read(train_set, DATA_PATH, CAMERA_OR_SUBJECT, config)
-    # test_sklt0, test_label0 = Action_input.read(test_set, DATA_PATH, CAMERA_OR_SUBJECT, eval_config)
-    #
-    # MAX_LENGTH = 0
-    # for batchNo in range(len(train_sklt0)):
-    #     if len(train_sklt0[batchNo]) > MAX_LENGTH:
-    #         MAX_LENGTH = len(train_sklt0[batchNo])
-    #     else:
-    #         pass
-    #
-    # for batchNo in range(len(test_sklt0)):
-    #     if len(test_sklt0[batchNo]) > MAX_LENGTH:
-    #         MAX_LENGTH = len(test_sklt0[batchNo])
-    #     else:
-    #         pass
-    #
-    # print('MAX_LENGTH = ', MAX_LENGTH)
-    #
-    # train_sklt1 = feature_only_diff_2(train_sklt0, MAX_LENGTH, config)
-    # test_sklt1 = feature_only_diff_2(test_sklt0, MAX_LENGTH, eval_config)
-    #
-    # del train_sklt0, test_sklt0
-    #
-    # feature_train = Human_Cognitive_Coordinate(train_sklt1)
-    #
-    # feature_test = Human_Cognitive_Coordinate(test_sklt1)
-    #
-    # AS_train_label = one_hot_labeling(train_label0, config)
-    # AS_test_label = one_hot_labeling(test_label0, eval_config)
-    #
-    # del train_sklt1, test_sklt1, train_label0, test_label0
-    # ###################################################################################################################
-    # # NTU skeleton data: ALL
-    # np.save('./sklt_npy_subject/feature_train_subject_all', feature_train)
-    # np.save('./sklt_npy_subject/AS_train_label_subject_all', AS_train_label)
-    # np.save('./sklt_npy_subject/feature_test_subject_all', feature_test)
-    # np.save('./sklt_npy_subject/AS_test_label_subject_all', AS_test_label)
-    # print 'Skeleton data stored.'
+    ###################################################################################################################
+    DATA_PATH = 'sklt_data_all'
+    CAMERA_OR_SUBJECT = 2
+    
+    train_set = [1, 2, 4, 5, 8, 9, 13, 14, 15, 16, 17, 18, 19, 25, 27, 28, 31, 34, 35, 38]
+    test_set = [3, 6, 7, 10, 11, 12, 20, 21, 22, 23, 24, 26, 29, 30, 32, 33, 36, 37, 39, 40]
+    
+    train_sklt0, train_label0 = Action_input.read(train_set, DATA_PATH, CAMERA_OR_SUBJECT, config)
+    test_sklt0, test_label0 = Action_input.read(test_set, DATA_PATH, CAMERA_OR_SUBJECT, eval_config)
+    
+    MAX_LENGTH = 0
+    for batchNo in range(len(train_sklt0)):
+        if len(train_sklt0[batchNo]) > MAX_LENGTH:
+            MAX_LENGTH = len(train_sklt0[batchNo])
+        else:
+            pass
+    
+    for batchNo in range(len(test_sklt0)):
+        if len(test_sklt0[batchNo]) > MAX_LENGTH:
+            MAX_LENGTH = len(test_sklt0[batchNo])
+        else:
+            pass
+    
+    print('MAX_LENGTH = ', MAX_LENGTH)
+    
+    train_sklt1 = feature_only_diff_2(train_sklt0, MAX_LENGTH, config)
+    test_sklt1 = feature_only_diff_2(test_sklt0, MAX_LENGTH, eval_config)
+    
+    del train_sklt0, test_sklt0
+    
+    feature_train = Human_Cognitive_Coordinate(train_sklt1)
+    
+    feature_test = Human_Cognitive_Coordinate(test_sklt1)
+    
+    AS_train_label = one_hot_labeling(train_label0, config)
+    AS_test_label = one_hot_labeling(test_label0, eval_config)
+    
+    del train_sklt1, test_sklt1, train_label0, test_label0
+    ###################################################################################################################
+    # NTU skeleton data: ALL
+    np.save('./sklt_npy_subject/feature_train_subject_all', feature_train)
+    np.save('./sklt_npy_subject/AS_train_label_subject_all', AS_train_label)
+    np.save('./sklt_npy_subject/feature_test_subject_all', feature_test)
+    np.save('./sklt_npy_subject/AS_test_label_subject_all', AS_test_label)
+    print 'Skeleton data stored.'
 
-    # LOAD .npy: ALL
-    feature_train = np.load('./sklt_npy_{0}/feature_train_{0}_all.npy'.format(view_subject))
-    AS_train_label = np.load('./sklt_npy_{0}/AS_train_label_{0}_all.npy'.format(view_subject))
-    feature_test = np.load('./sklt_npy_{0}/feature_test_{0}_all.npy'.format(view_subject))
-    AS_test_label = np.load('./sklt_npy_{0}/AS_test_label_{0}_all.npy'.format(view_subject))
-    print 'Skeleton data (camera_all) restored.'
+#     # LOAD .npy: ALL
+#     feature_train = np.load('./sklt_npy_{0}/feature_train_{0}_all.npy'.format(view_subject))
+#     AS_train_label = np.load('./sklt_npy_{0}/AS_train_label_{0}_all.npy'.format(view_subject))
+#     feature_test = np.load('./sklt_npy_{0}/feature_test_{0}_all.npy'.format(view_subject))
+#     AS_test_label = np.load('./sklt_npy_{0}/AS_test_label_{0}_all.npy'.format(view_subject))
+#     print 'Skeleton data (camera_all) restored.'
 
     # feature_train = feature_train[:, :, 0:75]
     # feature_test = feature_test[:, :, 0:75]
