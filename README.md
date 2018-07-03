@@ -59,7 +59,7 @@ The codes ([make_csv_action_0149.m][8], [make_csv_action_5060.m][9]) cover two c
 
 ## Citation
 
-To cite NTU RGB+D dataset, please use this bibtex record:
+To cite our code or paper, please use this bibtex record:
 
 ```
 @InProceedings{Lee_2017_ICCV,
