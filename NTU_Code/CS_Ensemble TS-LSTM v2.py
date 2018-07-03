@@ -2415,6 +2415,30 @@ def feature_only_diff(data, maxValue, config):
 
     return new_data
 
+def feature_only_diff_2(data, maxValue, config):
+    new_data = np.zeros([len(data), maxValue, config.feature_size])
+
+    for batch_step in range(len(data)):
+        # print len(data[batch_step])
+
+        new_data[batch_step][maxValue-len(data[batch_step]):maxValue] = data[batch_step]
+        for time_step in range(maxValue):
+            if np.sum(new_data[batch_step][time_step][0:75]) != 0:
+                for ttime_step in range(time_step):
+                    new_data[batch_step][ttime_step][0:75] = new_data[batch_step][time_step][0:75]
+                break
+            else:
+                pass
+        for time_step in range(maxValue):
+            if np.sum(new_data[batch_step][time_step][75:150]) != 0:
+                for ttime_step in range(time_step):
+                    new_data[batch_step][ttime_step][75:150] = new_data[batch_step][time_step][75:150]
+                break
+            else:
+                pass
+
+    return new_data
+
 def one_hot_labeling(original_label, config):
     new_label = np.zeros([len(original_label), config.class_size])
 
