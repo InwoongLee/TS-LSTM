@@ -2237,7 +2237,7 @@ def feature_only_diff(data, maxValue, config):
     return new_data
 
 def feature_only_diff_2(data, maxValue, config):
-    new_data = np.zeros([len(data), maxValue, 2*config.feature_size])
+    new_data = np.zeros([len(data), maxValue, config.feature_size])
 
     for batch_step in range(len(data)):
         # print len(data[batch_step])
