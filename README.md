@@ -57,6 +57,20 @@ The codes ([make_csv_action_0149.m][8], [make_csv_action_5060.m][9]) cover two c
   - Three skeletons (Primary and secondary actor and trash skeleton) appear without skeleton index switching.
   - Three skeletons appear with skeleton index switching.
 
+## Citation
+
+To cite NTU RGB+D dataset, please use this bibtex record:
+
+```
+@InProceedings{Lee_2017_ICCV,
+author = {Lee, Inwoong and Kim, Doyoung and Kang, Seoungyoon and Lee, Sanghoon},
+title = {Ensemble Deep Learning for Skeleton-Based Action Recognition Using Temporal Sliding LSTM Networks},
+booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
+month = {Oct},
+year = {2017}
+}
+```
+
 [1]: http://openaccess.thecvf.com/content_ICCV_2017/papers/Lee_Ensemble_Deep_Learning_ICCV_2017_paper.pdf
 [2]: http://m.tv.naver.com/v/2643231
 [3]: https://youtu.be/KSy7flzu4Es
