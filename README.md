@@ -58,9 +58,7 @@ The codes ([make_csv_action_0149.m][8], [make_csv_action_5060.m][9]) cover two c
   - Three skeletons appear with skeleton index switching.
 
 ## Citation
-
 To cite our code or paper, please use this bibtex record:
-
 ```
 @InProceedings{Lee_2017_ICCV,
 author = {Lee, Inwoong and Kim, Doyoung and Kang, Seoungyoon and Lee, Sanghoon},
