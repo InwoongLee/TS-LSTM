@@ -31,7 +31,8 @@ for skltNo = 1:size(sklt_list, 1)
                 end
             end
             
-            new_sklt = sklt(first_num_zero + 1:size(sklt, 1) - last_num_zero, :);
+            new_sklt = zeros(size(sklt(first_num_zero + 1:size(sklt, 1) - last_num_zero, :), 1), 150);
+            new_sklt(:, 1:75) = sklt(first_num_zero + 1:size(sklt, 1) - last_num_zero, :);
             csvwrite(strcat(output_path, sklt_file_name(1:20), '.csv'), new_sklt);
         end
         
@@ -52,7 +53,8 @@ for skltNo = 1:size(sklt_list, 1)
         end
     end
 end
-new_sklt = sklt(first_num_zero + 1:size(sklt, 1) - last_num_zero, :);
+new_sklt = zeros(size(sklt(first_num_zero + 1:size(sklt, 1) - last_num_zero, :), 1), 150);
+new_sklt(:, 1:75) = sklt(first_num_zero + 1:size(sklt, 1) - last_num_zero, :);
 csvwrite(strcat(output_path, sklt_file_name(1:20), '.csv'), new_sklt);
 
 end
