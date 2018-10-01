@@ -4,7 +4,7 @@ This is a Tensorflow implementation of Ensemble TS-LSTM v1, v2 and v3 models fro
 
 ![Model architecture](Image/ensemble_model.png)
 
-This is also a Tensorflow implementation of Generalized Temporal Sliding LSTM (TS-LSTM) models from the paper 3D Human Behavior Understanding using Generalized TS-LSTM Networks. The generalized TS-LSTM networks consist of multiple TS-LSTM modules, and can be controlled by the hyper-parameters such as the LSTM window sizes, temporal strides and motion feature offsets of TS-LSTM modules.
+This is also a Tensorflow implementation of Generalized Temporal Sliding LSTM (TS-LSTM) models from the paper 3D Human Behavior Understanding using Generalized TS-LSTM Networks (under review). The generalized TS-LSTM networks consist of multiple TS-LSTM modules, and can be controlled by the hyper-parameters such as the LSTM window sizes, temporal strides and motion feature offsets of TS-LSTM modules.
 
 ![Model architecture](Image/generalized_model.png)
 
