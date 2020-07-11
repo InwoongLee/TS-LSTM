@@ -1,6 +1,6 @@
 # 3D Human Behavior Understanding using Temporal Sliding LSTM Networks
 
-This is a Tensorflow implementation of Ensemble TS-LSTM v1, v2 and v3 models from the paper [Ensemble Deep Learning for Skeleton-based Action Recognition using Temporal Sliding LSTM networks][1] and the paper 3D Human Behavior Understanding using Generalized TS-LSTM Networks. You can see the video for the former paper in [Naver D2][2] or [YouTube][3].
+This is a Tensorflow implementation of Ensemble TS-LSTM v1, v2 and v3 models from the paper [Ensemble Deep Learning for Skeleton-based Action Recognition using Temporal Sliding LSTM networks][1] and the paper [3D Human Behavior Understanding using Generalized TS-LSTM Networks][12]. You can see the video for the former paper in [Naver D2][2] or [YouTube][3].
 
 ![Model architecture](Image/ensemble_model.png)
 
@@ -80,3 +80,4 @@ year = {2017}
 [9]: https://github.com/InwoongLee/TS-LSTM/blob/master/NTU_Data_Info/make_csv_action_5060.m
 [10]: https://github.com/InwoongLee/TS-LSTM/blob/master/NTU_Data_Info/Actions_01-49.txt
 [11]: https://github.com/InwoongLee/TS-LSTM/blob/master/NTU_Data_Info/Actions_50-60.txt
+[12]: https://ieeexplore.ieee.org/abstract/document/9025188
