@@ -69,6 +69,24 @@ year = {2017}
 }
 ```
 
+```
+@article{DBLP:journals/tmm/LeeKL21,
+  author    = {Inwoong Lee and
+               Doyoung Kim and
+               Sanghoon Lee},
+  title     = {3-D Human Behavior Understanding Using Generalized {TS-LSTM} Networks},
+  journal   = {{IEEE} Trans. Multim.},
+  volume    = {23},
+  pages     = {415--428},
+  year      = {2021},
+  url       = {https://doi.org/10.1109/TMM.2020.2978637},
+  doi       = {10.1109/TMM.2020.2978637},
+  timestamp = {Tue, 02 Mar 2021 11:25:28 +0100},
+  biburl    = {https://dblp.org/rec/journals/tmm/LeeKL21.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+```
+
 [1]: http://openaccess.thecvf.com/content_ICCV_2017/papers/Lee_Ensemble_Deep_Learning_ICCV_2017_paper.pdf
 [2]: http://m.tv.naver.com/v/2643231
 [3]: https://youtu.be/KSy7flzu4Es
